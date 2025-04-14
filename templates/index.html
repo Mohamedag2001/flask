@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Image de fond -->
+<div class="container-fluid p-0">
+  <div class="row g-0">
+    <div class="col-12 vh-100" style="background-image: url('{{ url_for('static', filename='images/ingenieur.jpg') }}'); background-size: cover; background-position: center;">
+      <!-- Overlay noir transparent -->
+      <div class="d-flex justify-content-center align-items-center h-100 text-white" style="background-color: rgba(0, 0, 0, 0.5);">
+        <h1 class="display-4 font-weight-bold">Bienvenue</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

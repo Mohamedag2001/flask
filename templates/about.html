@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-5">
+  <!-- Titre animé et centré -->
+  <div class="flex justify-center mb-6">
+    <h1 class="text-3xl font-bold text-green-600 text-center animate-pulse">🌞 A propos de Karal Energy </h1>
+  </div>
+  
+  <!-- Texte sous le titre -->
+  <div class="text-center text-lg text-gray-600 mb-4">
+    Découvrez nos solutions énergétiques innovantes et durables.
+  </div>
+
+  <!-- Présentation Karal Energy -->
+  <div class="bg-white rounded-2xl shadow-lg p-4 md:p-6 mb-8">
+    <p class="text-lg text-gray-700 leading-relaxed">
+      <strong>Karal Energy</strong> est une entreprise innovante spécialisée dans la production et la distribution d'énergies renouvelables. 
+      Notre mission est de fournir des solutions énergétiques durables et accessibles à tous. Grâce à notre technologie de pointe 
+      et notre engagement pour la planète, nous contribuons à bâtir un avenir plus vert.
+    </p>
+  </div>
+
+  <!-- Cartes des énergies -->
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 shadow border border-green-400 rounded-xl overflow-hidden">
+        <img src="{{ url_for('static', filename='images/panel.jpg') }}" class="card-img-top object-cover" alt="Panneaux solaires" style="height: 250px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title text-green-600 font-semibold">Énergie Solaire</h5>
+          <p class="card-text text-gray-600">Karal Energy installe des panneaux solaires performants dans les zones rurales et urbaines.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 shadow border border-green-400 rounded-xl overflow-hidden">
+        <img src="{{ url_for('static', filename='images/44mm.jpg') }}" class="card-img-top object-cover" alt="Éolienne" style="height: 250px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title text-green-600 font-semibold">Conception Électroniques</h5>
+          <p class="card-text text-gray-600">Nous développons également des solutions électroniques adaptées aux besoins de nos clients.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
