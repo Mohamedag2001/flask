@@ -1,17 +1,28 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Karal Energy</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<style>
+    body {
+      padding-top: 80px; /* Ajuste selon la hauteur de la navbar */
+    }
+  </style>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm fixed-top">
+    <div class="container">
+      <!-- Logo + nom -->
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" width="40" height="40" class="me-2">
+        <span class="fw-bold">Karal Energy</span>
+      </a>
+  
+      <!-- Bouton hamburger mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+  
+      <!-- Liens -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="{{ url_for('index') }}">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="/about/">Apropos</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about/">A propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ url_for('services') }}">Services</a></li>
         </ul>
       </div>
     </div>

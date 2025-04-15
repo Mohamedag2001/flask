@@ -1,0 +1,21 @@
+# Environnements virtuels
+venv/
+env/
+
+# Fichiers Python compilés
+__pycache__/
+*.pyc
+
+# Fichiers de configuration perso
+.env
+*.sqlite3
+
+# Dossiers temporaires
+*.log
+*.bak
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store

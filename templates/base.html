@@ -12,12 +12,7 @@
       {% include "navbar/navbar.html" %}
     <div class="container mt-4">
       {% block content %}
-      div class="container-fluid p-0 m-0" style="background-image: url('{{ url_for('static', filename='images/ingenieur.jpg') }}'); background-size: cover; background-position: center; height: 100vh; width: 100vw;">
-  <!-- Overlay noir transparent -->
-  <div class="d-flex justify-content-center align-items-center h-100 w-100" style="background-color: rgba(0, 0, 0, 0.5);">
-    <h1 class="text-white display-4 font-weight-bold">Bienvenue</h1>
-  </div>
-</div>
+      
       {% endblock content %}
     </div>
 

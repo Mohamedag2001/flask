@@ -1,0 +1,43 @@
+<!-- templates/service.html -->
+{% extends "base.html" %}
+{% block content %}
+<div class="container py-5">
+  <h1 class="text-center mb-5">Nos Services</h1>
+  <div class="row g-4">
+    
+    <!-- Service 1: Panneaux solaires -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="{{ url_for('static', filename='images/image.jpg') }}" class="card-img-top" alt="Installation de panneaux solaires">
+        <div class="card-body">
+          <h5 class="card-title">Installation de panneaux solaires</h5>
+          <p class="card-text">Nous installons des systèmes solaires fiables pour un avenir énergétique durable.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 2: Conception de circuits imprimés -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="{{ url_for('static', filename='images/pcb.jpg') }}" class="card-img-top" alt="Conception de circuits imprimés">
+        <div class="card-body">
+          <h5 class="card-title">Conception de circuits imprimés</h5>
+          <p class="card-text">Nous concevons des PCB sur mesure, adaptés à vos projets électroniques.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 3: Bureau d'études -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="{{ url_for('static', filename='images/bureau.jpg') }}" class="card-img-top" alt="Bureau d'études">
+        <div class="card-body">
+          <h5 class="card-title">Bureau d'études</h5>
+          <p class="card-text">Notre bureau d'études vous accompagne dans la conception, le prototypage et la mise en œuvre de vos projets.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
